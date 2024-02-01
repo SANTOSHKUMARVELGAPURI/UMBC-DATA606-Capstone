@@ -1,6 +1,6 @@
 # Santosh Kumar Velgapuri
 
-<img src="/docs/SantoshKumarVelgapuri.jpg" align="right">
+<img src="Docs/SantoshKumarVelgapuri.jpg" align="right">
 
 **Graduate Student in Data Science** at **University of Maryland Baltimore County**  
 (Aug 2022 – May 2024)  
