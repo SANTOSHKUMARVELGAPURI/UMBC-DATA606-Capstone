@@ -1,15 +1,13 @@
-# The Template and Guideline for the Final Report
+# Course Recommendation System for Coursera Users
 
-- This document serves as a guide for developing project proposal which will eventually become the proposal and final report.
-- You start with the end in mind and adopt an agile approach:
   - Making progress continuously towards your goal.
   - Updating this document continuously along the way.
  
 ## 1. Title and Author
 
-- **Project Title** :Loan Application  Analyzer 
+- **Project Title** : Course Recommendation System for Coursera Users
 - Prepared for UMBC Data Science Master Degree Capstone by Dr Chaojie (Jay) Wang
-- **Author**        :Santosh Kumar Velgapuri
+- **Author**        : Santosh Kumar Velgapuri
 - [Link to the author's GitHub profile](https://github.com/SANTOSHKUMARVELGAPURI)
 - [Link to the author's LinkedIn profile](https://www.linkedin.com/in/velagapuri-santosh-rao-b6a77916b).
 - Link to your PowerPoint presentation file (TBA)
@@ -18,30 +16,77 @@
 ## 2. Background
 
 - **What is it about?**  
-→ The loan application analyzer project involves utilizing data  and machine learning models to analyze loan applications.  
-→ The goal is likely to automate the decision-making process in approving or rejecting loan applications based on various factors such as (  
-  Gender  
-  Married status  
-  Education  
-  Employed status  
-  Applicant / co-applicant Income  
-  Loan amount  
-  Credit History  
-  Duration of the loan  
-  Residence Area)  
-  and historical data.  
-→ This involves developing a predictive model that can assess the creditworthiness of applicants, ultimately streamlining and optimizing the loan approval process.
+→ The project involves building a Course Recommendation System for Coursera users using machine learning models. The dataset contains information about various 
+ courses available on the Coursera platform, including attributes such as (
+- Course Title  
+- Rating, Level  
+- Duration  
+- Schedule    
+- Review  
+- What you will learn  
+- Skill gain
+- Modules  
+- Instructor  
+- Offered By  
+- Keyword  
+- Course URL.  
+
+→ The goal of the project is to analyze this dataset, perform exploratory data analysis (EDA), preprocess the data, and then build a machine learning model that 
+ can recommend courses to users based on their preferences, historical interactions, and other relevant features. The recommendation system aims to improve user 
+ experience by suggesting relevant and personalized courses that match their interests and learning goals.
 
 - **Why does it matter?**  
-→ This project is significant and differnt to a conventional predicting methods because it helps in automating the decision-making process for loan approval, 
-  making it faster, more accurate, and less biased.  
-→ It seeks to enhance accuracy, efficiency, and fairness in the loan approval process by leveraging algorithms that can identify patterns and insights not readily 
-  apparent through standard procedures.  
-→ By predicting loan defaulters and assessing risk, it aids banks and financial institutions in minimizing losses and optimizing their loan approval process, thus 
-  enhancing financial stability and customer satisfaction.
+→ This project is important as it addresses the critical need for personalized learning experiences in online education platforms like Coursera.  
+→ By leveraging machine learning models to analyze user behavior and preferences, the recommendation system can efficiently sift through the vast array of 
+ available courses to offer tailored suggestions, thereby saving users time and effort in finding relevant content.  
+→ This not only enhances user satisfaction and engagement but also contributes to improved learning outcomes by matching learners with courses that align with 
+ their interests, skill levels, and career aspirations. Additionally, the project's insights into algorithmic performance metrics and continuous improvement 
+ strategies can inform the development of similar recommendation systems across diverse online learning platforms, ultimately advancing the accessibility and 
+ effectiveness of online education worldwide.  
 
 - **What are your research questions?**  
-→  Can machine learning models accurately predict loan approval based on applicant data?  
-→  Which features are most indicative of an applicant's creditworthiness and risk of defaulting on a loan?  
-→  How do different machine learning algorithms compare in terms of accuracy and reliability for loan approval prediction?  
-→  What strategies can be implemented to improve the model's prediction accuracy and reduce bias?  
+→ How can user behavior and preferences on Coursera be effectively captured and utilized to generate personalized course recommendations?  
+→ Which machine learning algorithms and techniques are most suitable for building an accurate and efficient course recommendation system for Coursera users?  
+→ What metrics should be used to evaluate the performance and effectiveness of the recommendation system considering the factors such as courses, rating, what will you learn?.  
+
+## 3. Data
+
+The dataset chosen for this recomendation system provides a comprehensive overview of factors potentially contributing to heart diseases. It includes both categorical and numerical data, making it suitable for developing predictive models.
+
+- **Data sources:** [Coursera_Users_Dataset](https://www.kaggle.com/datasets/elvinrustam/coursera-dataset)
+- **Data size:** 52.8 MB 
+- **Data shape:** 8370 rows x 13 columns  
+- **Data Description:**
+
+
+  The dataset you've provided is for Loan Approval Prediction and comprises 614 entries across 13 columns. Here's a breakdown of its structure and the information each column represents:
+
+ 
+| Column Name     | Definition                                                | Data Type  |
+|-----------------|-----------------------------------------------------------|------------|
+| **Loan_ID**     |A unique identifier for each loan application.             | `object`   |
+| **Course**      |Title	Title of the course                                 | `object`   |
+| **Rating**	    |Rating of the course (out of 5)	                          | `float64`  |
+| **Level**	      |Difficulty level of the course	                            | `object`   |
+| **Schedule**	  |Schedule of the course	                                    | `object`   |
+| **What you will learn**|Description of what will be learned	                | `object`   |
+| **Skill gain**	|Description of skills gained                               | `object`   |
+| **Modules**	    |Modules included in the course	                            | `object`   |
+| **Instructor**	|Instructor of the course	                                  | `object`   |
+| **Offered By**  |Entity offering the course	                                | `object`   |
+| **Keyword**     |Keywords associated with the course	                      | `object`   |
+| **Course Url**	|URL of the course                                          | `object`   |
+| **Duration to complete (Approx.)**|Approximate duration to complete the course | `float64`  |
+| **Number of Review**|Number of reviews for the course	                       | `int64`    |
+
+**Target/Label Variable:**  
+
+The target variable is **"Number of Reviews."** The goal of the recommendation system is to predict or recommend courses that are likely to receive a high number of reviews, indicating popularity or perceived value.
+
+**Features/Predictors:**
+
+Level, What you will learn, Skill gain, Modules, Instructor, Keyword, Course Url, Number of Reviews.  
+
+## 4. Exploratory Data Analysis (EDA)  
+
+
