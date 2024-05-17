@@ -1,7 +1,4 @@
 # Course Recommendation System for Coursera Users
-
-  - Making progress continuously towards your goal.
-  - Updating this document continuously along the way.
  
 ## 1. Title and Author
 
@@ -119,4 +116,13 @@ _Evaluate Recommendations:_ Tested the recommendation system to ensure it provid
 _Deploy GUI:_ Create a user-friendly graphical interface using Tkinter that allows users to input a course title and receive personalized course recommendations. Deploy the final system for end-users to access and benefit. 
 
 ## 5. Summary.
+Our Coursera Course Recommendation System leverages advanced machine learning and natural language processing techniques to provide personalized course suggestions by analyzing course content through TF-IDF vectorization and cosine similarity. This system ensures that learners receive relevant and high-quality recommendations tailored to their interests, priority goals and learning paths. 
+
+What sets this recommendation system apart is its use of content-based filtering that combines multiple course attributes into a single "tags" feature, enabling a nuanced understanding of course content and providing more accurate and contextually relevant recommendations compared to traditional collaborative filtering methods.
+
+
+
+
+
+
 
