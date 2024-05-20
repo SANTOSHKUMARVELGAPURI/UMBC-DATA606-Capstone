@@ -117,9 +117,9 @@ _Evaluate Recommendations:_ Tested the recommendation system to ensure it provid
 _Deploy GUI:_ Create a user-friendly graphical interface using Tkinter that allows users to input a course title and receive personalized course recommendations. Deploy the final system for end-users to access and benefit. 
 
 ## 5. Summary.
-Our Coursera Course Recommendation System leverages advanced machine learning and natural language processing techniques to provide personalized course suggestions by analyzing course content through TF-IDF vectorization and cosine similarity. This system ensures that learners receive relevant and high-quality recommendations tailored to their interests, priority goals and learning paths. 
+Our Coursera Course Recommendation System leverages advanced machine learning and natural language processing techniques to provide personalized course suggestions by analyzing course content through TF-IDF vectorization and cosine similarity. This system ensures that learners receive relevant and high-quality recommendations tailored to their interests, priority goals and learning paths. What sets this recommendation system apart is its use of content-based filtering that combines multiple course attributes into a single "tags" feature, enabling a nuanced understanding of course content and providing more accurate and contextually relevant recommendations compared to traditional collaborative filtering methods.
 
-What sets this recommendation system apart is its use of content-based filtering that combines multiple course attributes into a single "tags" feature, enabling a nuanced understanding of course content and providing more accurate and contextually relevant recommendations compared to traditional collaborative filtering methods.
+By incorporating real-time user feedback and engagement metrics can further refine the recommendation accuracy. The system could also be extended to support multi-language courses and cross-platform recommendations, making it a versatile tool for various educational platforms. Furthermore, leveraging user behavioral data and collaborative filtering techniques alongside content-based filtering can enhance the robustness and relevance of recommendations, ultimately contributing to a more dynamic and interactive learning experience for users globally.
 
 
 
